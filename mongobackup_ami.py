@@ -29,7 +29,6 @@ if __name__ == '__main__':
         if dateDiff > 5:
             response = client.deregister_image(
                 ImageId=image['ImageId'],
-                DryRun=True
             )
         else:
             print(image['ImageId'] + '-' + 'is still valid')
